@@ -1,0 +1,69 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: poppins, sans-serif;
+    }
+    
+    .slider {
+        display: flex;
+        justify-content: space-between;
+        width: 88%;
+        height: 80%;
+    }
+    
+    .photo {
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        width: 8%;
+        overflow: hidden;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    
+    .photo img {
+        height: auto;
+    }
+    
+    .photo p {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        color: white;
+        font-weight: 500;
+        left: 20px;
+        bottom: 20px;
+        font-size: 20px;
+        transition: opacity 1s ease;
+    }
+    
+    .clicked {
+        width: 61%;
+    }
+    
+    .clicked p {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    @media (max-width:768px) {
+        #photo5 {
+            display: none;
+        }
+        .clicked {
+            width: 65%;
+        }
+    }
